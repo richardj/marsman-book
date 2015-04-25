@@ -1,0 +1,19 @@
+{
+  "name": "marsman-book",
+  "version": "1.0.0",
+  "description": "Marsman Book Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardj/marsman-book.git"
+  },
+  "author": "Richard Japenga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardj/marsman-book/issues"
+  },
+  "homepage": "https://github.com/richardj/marsman-book"
+}
