@@ -5,15 +5,14 @@
   <title>Hendrik Marsman</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="js/nowplaying.js" type="application/javascript"></script>
+  <script src="../js/script.js" type="application/javascript"></script>
   <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 <body>
   <div class="border"></div>
   <header>
-    <nav>
-      <div class="show-nav">
-      </div>
+    <nav id="navigation">
+      <span>Menu +</span>
       <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#book">The Book</a></li>
@@ -60,5 +59,13 @@
     </section>
   </main>
 
+  <script>
+  // self executing function here
+  (function() {
+     // your page initialization code here
+     // the DOM will be available here
+    init();
+  })();
+  </script>
 </body>
 </html>
