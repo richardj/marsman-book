@@ -20,10 +20,12 @@ body {
 }
 
 ::selection {
-  background: #f0ff00;
+  color: #fff;
+  background: #990100;
 }
 ::-moz-selection {
-  background: #f0ff00;
+  color: #fff;
+  background: #990100;
 }
 
 
@@ -31,42 +33,42 @@ body {
 /* navigation */
 
 nav {
+  width: 100%;
+  color: #fff;
+  border-left: 50px solid #990100;
   text-align: center;
-  padding-top: 10px;
-  border-bottom: 1px solid #999;
+  background: #333;
 }
-
-nav a {
-  font-size: 1.5rem;
-  font-family: 'Ropa Sans';
-  text-decoration: none;
+nav span {
+  cursor: pointer;
+  line-height: 50px;
+}
+nav.active ul {
+  display: block;
 }
 nav ul {
   margin: 0;
   padding: 0;
   display: none;
+  text-align: left;
+  background: #333;
 }
 nav li {
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  padding-left: 5px;
+  height: 50px;
   display: block;
-  margin: 0;
-  padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid #999;
+  line-height: 50px;
+  color: #fff;
+}
+nav a:hover {
+  border-left: 25px solid #990100;
 }
 
-.show-nav {
-  padding: 15px;
-}
-.show-nav:before {
-  content: "Menu";
-}
-.show-nav:after {
-  content: "+";
-}
 
-.show-nav.show:after {
-  content: "-";
-}
 
 
 /* main */
@@ -111,24 +113,32 @@ h2 {
 }
 
 
+#order {
+  color: #fff;
+  background: #333;
+}
 
 /* media queries */
 
 @media all and (min-width: 960px) {
+  nav {
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    top: 150px;
+    left: 25px;
+  }
   h1 {
     font-size: 5rem;
   }
   h2 {
     font-size: 3rem;
   }
-  nav {
-    padding-top: 50px;
-  }
   .border {
     height: 100%;
     width: 100%;
     position: fixed;
-    border: 25px solid #444;
+    border: 25px solid #333;
     pointer-events: none;
   }
 
@@ -136,5 +146,24 @@ h2 {
     max-width: 960px;
     margin: 0 auto;
     padding: 50px;
+  }
+  .order-holder {
+    display: flex;
+  }
+  /* order section */
+  .order-field {
+    flex: 1;
+    padding: 15px;
+    display: inline-block;
+  }
+  .book-image {
+    flex: 1;
+  }
+  h3.price {
+    margin-bottom: 10px;
+    font-size: 4rem;
+  }
+  form {
+    margin-top: 10px;
   }
 }
