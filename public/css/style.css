@@ -15,7 +15,7 @@ body {
 
 body {
   background: #fff;
-  /*background: #fff url('../images/bg.jpg') no-repeat 100% 100%;*/
+  /*background: #fff url('../images/hendrik.jpg') no-repeat 100% 100%;*/
   background-size: cover;
 }
 
@@ -31,7 +31,6 @@ body {
 
 
 /* navigation */
-
 nav {
   width: 100%;
   color: #fff;
@@ -93,9 +92,10 @@ section {
 
 .hendrik {
   width: 100%;
-  height: 400px;
+  height: 800px;
   margin: 0 auto;
-  background: url('../images/hendrik.gif') no-repeat 50% -50px fixed;
+  background: url('../images/hendrik.jpg') no-repeat 50% 0;
+  background-size: auto 800px;
 }
 
 h1 {
@@ -108,6 +108,7 @@ h1 span {
   font-size: 1rem;
 }
 h2 {
+  margin-top: 0;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -117,6 +118,7 @@ h2 {
   color: #fff;
   background: #333;
 }
+
 
 /* media queries */
 
@@ -149,21 +151,21 @@ h2 {
   }
   .order-holder {
     display: flex;
-  }
-  /* order section */
-  .order-field {
-    flex: 1;
-    padding: 15px;
-    display: inline-block;
-  }
-  .book-image {
-    flex: 1;
-  }
-  h3.price {
-    margin-bottom: 10px;
-    font-size: 4rem;
-  }
-  form {
+   }
+   /* order section */
+   .order-field {
+     flex: 1;
+     padding: 15px;
+     display: inline-block;
+   }
+   .book-image {
+     flex: 1;
+   }
+   h3.price {
+     margin-bottom: 10px;
+     font-size: 4rem;
+   }
+   form {
     margin-top: 10px;
-  }
+   }
 }
