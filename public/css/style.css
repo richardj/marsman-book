@@ -117,6 +117,52 @@ h2 {
   background: #333;
 }
 
+.button.order {
+  margin: 15px 0;
+  padding: 15px 25px;
+  color: #333;
+  text-decoration: none;
+  background: #990100; 
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 2rem;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.order svg {
+  width: 35px;
+  height: 35px;
+}
+.button.order:hover:after {
+  left: 0;
+  right: 0;
+}
+.button.order:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #990100;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
 
 /* media queries */
 
