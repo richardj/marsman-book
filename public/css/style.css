@@ -15,8 +15,6 @@ body {
 
 body {
   background: #fff;
-  /*background: #fff url('../images/hendrik.jpg') no-repeat 100% 100%;*/
-  background-size: cover;
 }
 
 ::selection {
@@ -92,20 +90,20 @@ section {
 
 .hendrik {
   width: 100%;
-  height: 800px;
+  height: 850px;
   margin: 0 auto;
-  background: url('../images/hendrik.jpg') no-repeat 50% 0;
+  background: url('../images/hendrik.jpg') no-repeat 50% 50px;
   background-size: auto 800px;
 }
 
 h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 h1 span {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 h2 {
   margin-top: 0;
@@ -124,14 +122,20 @@ h2 {
 
 @media all and (min-width: 960px) {
   nav {
-    width: 200px;
+    width: 150px;
     height: 50px;
     position: fixed;
     top: 150px;
     left: 25px;
   }
+  nav ul {
+    margin-left: -50px;
+  }
   h1 {
     font-size: 5rem;
+  }
+  h1 span {
+    margin-top: -1rem;
   }
   h2 {
     font-size: 3rem;
