@@ -111,12 +111,20 @@ h2 {
   text-align: center;
 }
 
+.poem-wrapper h3 {
+  text-align: center;
+}
 
 #order {
   color: #fff;
   background: #333;
 }
-
+.book-image {
+  width: 100%;
+}
+.book-image img {
+  width: 90%;
+}
 .order-field .notion { 
   font-size: .8rem;
 }
@@ -124,18 +132,16 @@ h2 {
   font-size: .8rem;
 }
 
-.button.order {
+
+/* buttons */
+
+.button {
   margin: 15px 0;
   padding: 15px 25px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  background: #990100; 
-  background: #fff;
-  position: relative;
-  display: inline-block;
-  text-align: center;
   vertical-align: middle;
-  font-size: 2rem;
+  display: block;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -144,16 +150,27 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  background: #333;
+}
+
+.button.order {
+  color: #333;
+  background: #990100; 
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
 }
 .order svg {
   width: 35px;
   height: 35px;
 }
-.button.order:hover:after {
+.button:hover:after {
   left: 0;
   right: 0;
 }
-.button.order:after {
+.button:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -206,29 +223,32 @@ h2 {
     margin: 0 auto;
     padding: 50px;
   }
+  .poem-wrapper {
+    width: 500px;
+    margin: 25px auto 0;
+  }
+  /* order */
   .order-holder {
     display: flex;
    }
-
-   /* order section */
-   .order-field {
-     flex: 1;
-     padding: 15px;
-     display: inline-block;
-   }
-   .book-image {
-     flex: 1;
-   }
-   h3.price {
-     margin-top: 0;
-     margin-bottom: 10px;
-     font-size: 6rem;
-   }
-   .price span {
-      font-size: 3rem;
-      vertical-align: top;
-   }
-   form {
-    margin-top: 10px;
-   }
+  .order-field {
+   flex: 1;
+   padding: 15px;
+   display: inline-block;
+  }
+  .book-image {
+   flex: 1;
+  }
+  h3.price {
+   margin-top: 0;
+   margin-bottom: 10px;
+   font-size: 6rem;
+  }
+  .price span {
+    font-size: 3rem;
+    vertical-align: top;
+  }
+  form {
+  margin-top: 10px;
+  }
 }
