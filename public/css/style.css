@@ -190,6 +190,16 @@ h2 {
 }
 
 
+/* reviews */
+
+h3 .author {
+  font-size: 1rem;
+}
+
+h3 .author:before {
+  content: "- ";
+}
+
 /* media queries */
 
 @media all and (min-width: 960px) {
